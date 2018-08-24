@@ -1,4 +1,5 @@
 ![Shadowsocks](https://github.com/teddysun/shadowsocks_install/raw/master/shadowsocks.png)
+
 一键安装脚本 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/s-s_install/master/s-s-go.sh chmod +x s-s-go.sh ./s-s-go.sh 2>&1 | tee s-s-go.log
 
 一键卸载脚本 ./shadowsocks-go.sh uninstall
