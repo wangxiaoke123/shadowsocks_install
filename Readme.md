@@ -4,6 +4,8 @@
 
 chmod +x shadowsocks-all.sh
 
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+
 一键卸载脚本 ./shadowsocks-go.sh uninstall
 
 使用命令：
