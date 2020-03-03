@@ -61,3 +61,17 @@ haproxy.sh
 - https://shadowsocks.be/10.html
 
 Copyright (C) 2014-2018 Teddysun
+
+echo "http://域名:80 {
+redir https://域名:666{url}
+}
+https://域名:666 {
+gzip
+tls 邮箱@gmail.com
+root /var/www/
+redir  https://域名{uri} 301 
+}" > /usr/local/caddy/Caddyfile
+
+ssr修改443端口，然后在配置文件中倒数第二行加上后面的代码，重启ssr
+
+"redirect": ["*:443#127.0.0.1:666"],
