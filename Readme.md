@@ -79,6 +79,14 @@ redir  https://域名{uri} 301
 
 }" > /usr/local/caddy/Caddyfile
 
-ssr修改443端口，然后在配置文件中倒数第二行加上后面的代码，重启ssr
+修改配置文件：/etc/shadowsocks-r/config.json
 
-"redirect": ["*:443#127.0.0.1:666"],
+vi /etc/shadowsocks-r/config.json
+
+1.“server_port”: 端口改为443
+
+2."redirect": ["*:443#127.0.0.1:666"], 
+
+重启SSR服务
+
+/etc/init.d/shadowsocks-r restart
