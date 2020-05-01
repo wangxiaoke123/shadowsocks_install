@@ -85,7 +85,7 @@ vi /etc/shadowsocks-r/config.json
 
 1.“server_port”: 端口改为443
 
-2."redirect": ["*:443#127.0.0.1:666"], 
+2."redirect":["*:443#127.0.0.1:666"], 
 
 重启SSR服务
 
