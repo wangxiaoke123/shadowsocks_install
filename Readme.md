@@ -83,6 +83,8 @@ redir  https://域名{uri} 301
 
 vi /etc/shadowsocks-r/config.json
 
+秋水新脚本修改配置文件nano /etc/shadowsocks.json
+
 1.“server_port”: 端口改为443
 
 2."redirect":["*:443#127.0.0.1:666"], 
