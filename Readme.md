@@ -23,9 +23,13 @@ chmod +x shadowsocks-all.sh
 ssr添加多个端口：我们需要分别删掉关于端口和密码的两行,然后另外加入一个port-password参数,参数中标明多个端口和对应的密码
 
 "port_password":{
+
         "8686":"mimamima1",
+        
         "8787":"mimamima2",
+        
         "8888":"mimamima3"
+        
     },
 
 # Auto install Shadowsocks Server
